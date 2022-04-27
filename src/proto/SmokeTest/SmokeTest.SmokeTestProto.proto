@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package SmokeTest;
+
+message SmokeTestRequest {
+    string inhale = 1;
+}
+
+message SmokeTestResponse {
+    string exhale = 1;
+}
+
+service SmokeTestService {
+    rpc smoke(SmokeTestRequest) returns (SmokeTestResponse) {
+
+    }
+}
